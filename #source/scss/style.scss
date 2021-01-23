@@ -91,7 +91,7 @@ body {
 }
 
    .content-info {
-      height: 692px;
+      min-height: 100vh;
       background: #eff6fc;
 		&__text {
          text-align: center;
@@ -137,10 +137,10 @@ body {
          height: 55px;
          width: 415px;
          border: 1px solid #BABABA;
+         padding: 0px 0px 0px 31px;
          
          &::placeholder {
             font-weight: 500;
-            padding: 0px 0px 0px 31px;
             font-size: 14px;
             line-height: 21px;
          }
@@ -172,6 +172,10 @@ body {
       position: absolute;
       top: 200px;
       left: 123px;
+      &:active {
+         top: 207px;
+         left: 130px;
+      }
       span::after {
          content: '';
          border: 1px solid #EC4B85;
@@ -182,6 +186,9 @@ body {
          height: 61px;
          opacity: 0.3;
       }
+      span:active::after{
+         position: fixed;
+      }
    }
 }
 
@@ -190,6 +197,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   
    &__text {
       color: #fff;
       line-height: 32px;

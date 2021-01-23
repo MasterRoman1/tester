@@ -212,32 +212,29 @@ body {
   height: 55px;
   width: 415px;
   border: 1px solid #BABABA;
+  padding: 0px 0px 0px 31px;
 }
 
 .form__name::-webkit-input-placeholder {
   font-weight: 500;
-  padding: 0px 0px 0px 31px;
   font-size: 14px;
   line-height: 21px;
 }
 
 .form__name:-ms-input-placeholder {
   font-weight: 500;
-  padding: 0px 0px 0px 31px;
   font-size: 14px;
   line-height: 21px;
 }
 
 .form__name::-ms-input-placeholder {
   font-weight: 500;
-  padding: 0px 0px 0px 31px;
   font-size: 14px;
   line-height: 21px;
 }
 
 .form__name::placeholder {
   font-weight: 500;
-  padding: 0px 0px 0px 31px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -291,6 +288,11 @@ body {
   left: 123px;
 }
 
+.form__link:active {
+  top: 207px;
+  left: 130px;
+}
+
 .form__link span::after {
   content: '';
   border: 1px solid #EC4B85;
@@ -300,6 +302,10 @@ body {
   width: 251px;
   height: 61px;
   opacity: 0.3;
+}
+
+.form__link span:active::after {
+  position: fixed;
 }
 
 .footer {
